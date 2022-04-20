@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Bail out before loading anything unless this flag is set.
 #
 # We are doing this to guard against bundler autoloading because there is
@@ -168,7 +170,7 @@ if $load_god
     STOP_TIMEOUT_DEFAULT = 10
 
     # The default String signal to send for the stop command.
-    STOP_SIGNAL_DEFAULT = 'TERM'.freeze
+    STOP_SIGNAL_DEFAULT = 'TERM'
 
     class << self
       # user configurable

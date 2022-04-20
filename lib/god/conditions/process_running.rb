@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   module Conditions
     # Trigger when a process is running or not running depending on attributes.

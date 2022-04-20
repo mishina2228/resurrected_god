@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God::Contacts::Twitter.settings = {
   # this is for my 'mojombo2' twitter test account
   # feel free to use it for testing your conditions

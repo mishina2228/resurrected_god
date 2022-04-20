@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 # run with:  god -c /path/to/gravatar.god
 #
 # This is the actual config file used to keep the mongrels of
 # gravatar.com running.
 
-RAILS_ROOT = '/Users/tom/dev/gravatar2'.freeze
+RAILS_ROOT = '/Users/tom/dev/gravatar2'
 
 %w[8200 8201 8202].each do |port|
   God.watch do |w|

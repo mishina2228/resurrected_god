@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God.watch do |w|
   w.name = 'running-load'
   w.start = '/Users/tom/dev/god/test/configs/child_polls/simple_server.rb'

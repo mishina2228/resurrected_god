@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # God::Contacts::Campfire.defaults do |d|
 #   d.subdomain = 'github'
 #   d.token = '9fb768e421975cc1c6ff3f4f8306f890cb46e24f'

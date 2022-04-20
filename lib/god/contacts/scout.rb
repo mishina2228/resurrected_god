@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to Scout (http://scoutapp.com/).
 #
 # client_key - The String client key.

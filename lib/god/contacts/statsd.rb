@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to statsd
 #
 # host - statsd host

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ('01'..'08').each do |i|
   God.watch do |w|
     w.name = "stress-#{i}"

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   def self.registry
     @registry ||= Registry.new

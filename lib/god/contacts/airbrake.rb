@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to Airbrake (http://airbrake.io/).
 #
 # apikey - The String API key.

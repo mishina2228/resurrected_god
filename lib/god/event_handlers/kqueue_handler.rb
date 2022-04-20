@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'kqueue_handler_ext'
 
 module God
   class KQueueHandler
-    EVENT_SYSTEM = 'kqueue'.freeze
+    EVENT_SYSTEM = 'kqueue'
 
     def self.register_process(pid, events)
       monitor_process(pid, events_mask(events))

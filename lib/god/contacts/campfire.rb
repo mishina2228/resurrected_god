@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to a Campfire room (http://campfirenow.com).
 #
 #  subdomain - The String subdomain of the Campfire account. If your URL is

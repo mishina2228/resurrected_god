@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a message to a Slack channel
 #
 # account        - The name of your Slack account (visible in URL, e.g. foo.slack.com)

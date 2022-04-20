@@ -1,14 +1,15 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 # see http://refspecs.freestandards.org/LSB_3.1.0/LSB-Core-generic/LSB-Core-generic/iniscrptact.html
 
-PATH = '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin'.freeze
-NAME = 'god'.freeze
-DAEMON = "/usr/bin/#{NAME}".freeze
-CONFIGFILE = '/etc/god/god.conf'.freeze
-PIDFILE = "/var/run/#{NAME}.pid".freeze
-SCRIPTNAME = "/etc/init.d/#{NAME}".freeze
-START_FLAGS = "--no-syslog -P #{PIDFILE}".freeze
+PATH = '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin'
+NAME = 'god'
+DAEMON = "/usr/bin/#{NAME}"
+CONFIGFILE = '/etc/god/god.conf'
+PIDFILE = "/var/run/#{NAME}.pid"
+SCRIPTNAME = "/etc/init.d/#{NAME}"
+START_FLAGS = "--no-syslog -P #{PIDFILE}"
 
 ENV['PATH'] = PATH
 

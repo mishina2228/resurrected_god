@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to a webhook.
 #
 # url    - The String webhook URL.

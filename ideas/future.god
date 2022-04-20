@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 # This example shows how you might keep a local development Rails server up
 # and running on your Mac.
 
 # Run with:
 # god -c /path/to/events.god
 
-RAILS_ROOT = '/Users/tom/dev/helloworld'.freeze
+RAILS_ROOT = '/Users/tom/dev/helloworld'
 
 God::Contacts::Email.delivery_method = :smtp
 God::Contacts::Email.server_settings = {}

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   module Conditions
     # This condition degrades its interval by a factor of two for 3 tries before failing

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   # Metrics are responsible for holding watch conditions. An instance of
   # Metric is yielded to blocks in the start_if, restart_if, stop_if, and

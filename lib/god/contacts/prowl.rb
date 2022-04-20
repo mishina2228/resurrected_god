@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to Prowl (http://prowl.weks.net/).
 #
 # apikey - The String API key.

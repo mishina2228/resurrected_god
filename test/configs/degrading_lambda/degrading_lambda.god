@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God.watch do |w|
   w.name = 'degrading-lambda'
   w.start = "ruby #{File.join(File.dirname(__FILE__), *%w[tcp_server.rb])}"

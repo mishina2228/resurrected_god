@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to an email address.
 #
 # to_email        - The String email address to which the email will be sent.

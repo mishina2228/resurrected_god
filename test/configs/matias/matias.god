@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 pid_file = '/tmp/matias.pid'
 
 God.task do |w|

@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../../lib/god' if $PROGRAM_NAME == __FILE__
 
-RAILS_ROOT = '/Users/tom/dev/git/helloworld'.freeze
+RAILS_ROOT = '/Users/tom/dev/git/helloworld'
 
 God.watch do |w|
   w.name = 'local-3000'

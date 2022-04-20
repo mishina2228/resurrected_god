@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   class Condition < Behavior
     attr_accessor :transition, :notify, :info, :phase

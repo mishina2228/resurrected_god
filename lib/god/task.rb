@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   class Task
     # Public: Gets/Sets the String name of the task.

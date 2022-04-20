@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'execve'
 
 my_env = ENV.to_hash.merge('HOME' => '/foo')

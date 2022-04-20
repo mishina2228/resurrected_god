@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ENV['GOD_TEST_RAILS_ROOT'] || abort('Set a rails root for testing in an environment variable called GOD_TEST_RAILS_ROOT')
 
 RAILS_ROOT = ENV['GOD_TEST_RAILS_ROOT']

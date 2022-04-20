@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God.watch do |w|
   w.name = 'complex'
   w.interval = 5.seconds

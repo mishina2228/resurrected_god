@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This example shows how you might keep a local development Rails server up
 # and running on your Mac.
 

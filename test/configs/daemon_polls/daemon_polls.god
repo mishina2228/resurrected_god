@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God.watch do |w|
   w.name = 'daemon-polls'
   w.interval = 5.seconds

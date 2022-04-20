@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   module System
     class SlashProcPoller < PortablePoller
@@ -5,8 +7,8 @@ module God
       @@hertz = 100
       @@total_mem = nil
 
-      MEMINFO_PATH = '/proc/meminfo'.freeze
-      UPTIME_PATH = '/proc/uptime'.freeze
+      MEMINFO_PATH = '/proc/meminfo'
+      UPTIME_PATH = '/proc/uptime'
 
       REQUIRED_PATHS = [MEMINFO_PATH, UPTIME_PATH].freeze
 

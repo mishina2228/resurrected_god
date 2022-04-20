@@ -1,4 +1,6 @@
-RAILS_ROOT = '/Users/tom/dev/gravatar2'.freeze
+# frozen_string_literal: true
+
+RAILS_ROOT = '/Users/tom/dev/gravatar2'
 
 God.watch do |w|
   w.name = 'local-3000'

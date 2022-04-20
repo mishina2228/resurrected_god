@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # exit!(2)
 
 3.times do

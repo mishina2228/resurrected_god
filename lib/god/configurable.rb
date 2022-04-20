@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   module Configurable
     # Override this method in your Configurable (optional)

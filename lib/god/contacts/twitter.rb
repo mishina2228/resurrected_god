@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Send a notice to a Twitter account (http://twitter.com/).
 #
 # consumer_token  - The String OAuth consumer token (defaults to God's

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module God
   class SimpleLogger
     DEBUG = 2

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 LOG_DIR = File.join(File.dirname(__FILE__), *%w[logs])
 
 God.task do |t|

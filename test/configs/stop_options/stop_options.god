@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 God.watch do |w|
   w.name = 'stop-options'
   w.start = File.join(GOD_ROOT, *%w[test configs stop_options simple_server.rb])
