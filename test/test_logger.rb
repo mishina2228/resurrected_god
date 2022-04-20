@@ -4,7 +4,7 @@ require_relative 'helper'
 
 class TestLogger < Minitest::Test
   def setup
-    @log = God::Logger.new(StringIO.new('/dev/null'))
+    @log = God::Logger.new(StringIO.new)
   end
 
   # log
