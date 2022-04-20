@@ -176,7 +176,7 @@ class TestGodSystem < MiniTest::Test
 
           puts "Alive watches: #{watches.count { |_name, w| w.alive? }}, "\
                "Not alive watches: #{watches.count { |_name, w| !w.alive? }}, "\
-               "Watches: #{size}. Go to sleep..."
+               "Watches: #{size}. Go to sleep...\n"
           sleep 0.5
         end
       end
@@ -207,7 +207,7 @@ class TestGodSystem < MiniTest::Test
 
           puts "Alive watches: #{watches.count { |_name, w| w.alive? }}, "\
                "Not alive watches: #{watches.count { |_name, w| !w.alive? }}, "\
-               "Watches: #{size}. Go to sleep..."
+               "Watches: #{size}. Go to sleep...\n"
           sleep 0.5
         end
       end
