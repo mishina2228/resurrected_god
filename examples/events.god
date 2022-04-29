@@ -6,7 +6,7 @@
 # Run with:
 # god -c /path/to/events.god
 
-RAILS_ROOT = ENV['GOD_TEST_RAILS_ROOT']
+RAILS_ROOT = ENV.fetch('GOD_TEST_RAILS_ROOT')
 
 %w[3002].each do |port|
   God.watch do |w|

@@ -25,7 +25,7 @@ module God
       def notify(message, _time, _priority, _category, hostname)
         statsd = ::Statsd.new host, (port ? port.to_i : 8125) # 8125 is the default statsd port
 
-        hostname.tr!('.', '_')
+        hostname = hostname.tr('.', '_')
         app = message.gsub(/([^\s]*).*/, '\1')
 
         [
