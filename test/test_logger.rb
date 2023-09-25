@@ -43,8 +43,8 @@ class TestLogger < Minitest::Test
 
     out = @log.watch_log_since('foo', t2)
 
-    assert(/one/ !~ out)
-    assert(/two/ !~ out)
+    refute_match(/one/, out)
+    refute_match(/two/, out)
     assert_match(/three/, out)
   end
 

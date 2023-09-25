@@ -110,7 +110,7 @@ class TestGodSystem < Minitest::Test
   # use short timeout to send SIGKILL before 10s timeout
   def test_stop_all_with_non_killing_signal_short_timeout
     stop_timeout = 1
-    assert stop_timeout < ::God::STOP_TIMEOUT_DEFAULT
+    assert_operator stop_timeout, :<, ::God::STOP_TIMEOUT_DEFAULT
     with_god_cleanup do
       God.start
       God.watch do |w|

@@ -18,7 +18,7 @@ class TestSystemProcess < Minitest::Test
 
   def test_memory
     assert_kind_of Integer, @process.memory
-    assert @process.memory > 0
+    assert_operator @process.memory, :>, 0
   end
 
   def test_percent_memory
