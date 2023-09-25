@@ -2,7 +2,7 @@
 
 require_relative 'helper'
 
-class TestGod < MiniTest::Test
+class TestGod < Minitest::Test
   def setup
     God::Socket.stubs(:new).returns(true)
     God.stubs(:setup).returns(true)

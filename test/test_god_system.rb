@@ -2,7 +2,7 @@
 
 require_relative 'helper'
 
-class TestGodSystem < MiniTest::Test
+class TestGodSystem < Minitest::Test
   def assert_watch_running(watch_name)
     assert God.watches[watch_name].alive?
   end
