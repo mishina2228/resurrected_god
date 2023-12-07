@@ -13,7 +13,7 @@ class TestGod < Minitest::Test
 
   def teardown
     God.main&.kill
-    God.watches&.each do |_k, w|
+    God.watches&.each_value do |w|
       w.driver.thread.kill
     end
     God.reset
