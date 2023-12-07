@@ -124,7 +124,7 @@ if $load_god
   class Module
     def safe_attr_accessor(*args)
       args.each do |arg|
-        define_method("#{arg}=".intern) do |other|
+        define_method(:"#{arg}=") do |other|
           abort "God.#{arg} must be set before any Tasks are defined" if !running && inited
 
           if running && inited
@@ -132,11 +132,11 @@ if $load_god
             return
           end
 
-          instance_variable_set("@#{arg}".intern, other)
+          instance_variable_set(:"@#{arg}", other)
         end
 
         define_method(arg) do
-          instance_variable_get("@#{arg}".intern)
+          instance_variable_get(:"@#{arg}")
         end
       end
     end
