@@ -29,4 +29,7 @@ Gem::Specification.new do |s|
   s.extensions = %w[ext/god/extconf.rb]
 
   s.files = Dir['History.md', 'LICENSE', 'README.md', 'bin/**/*', 'ext/**/*', 'lib/**/*']
+
+  s.add_dependency('drb')
+  s.add_dependency('syslog')
 end
