@@ -1,3 +1,8 @@
+## 1.1.1 / 2023-12-29
+
+* Minor Changes
+  * Add drb and syslog to runtime dependencies for Ruby 3.4+
+
 ## 1.1.0 / 2022-06-29
 
 * Major Changes
