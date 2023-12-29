@@ -461,7 +461,7 @@ if $load_god
     # Returns true on success, false if all tasks could not be stopped within 10
     # seconds
     def self.stop_all
-      watches.sort.each_value do |w|
+      watches.sort.each do |(_name, w)|
         Thread.new do
           w.action(:stop)
           w.unmonitor if w.state != :unmonitored
