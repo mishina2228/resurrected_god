@@ -30,6 +30,6 @@ Gem::Specification.new do |s|
 
   s.files = Dir['History.md', 'LICENSE', 'README.md', 'bin/**/*', 'ext/**/*', 'lib/**/*']
 
-  s.add_dependency('drb')
-  s.add_dependency('syslog')
+  s.add_dependency('drb', '~> 2.0')
+  s.add_dependency('syslog', '~> 0.1')
 end
