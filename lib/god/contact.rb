@@ -28,7 +28,7 @@ module God
     end
 
     def arg(name)
-      instance_variable_get("@#{name}") || self.class.instance_variable_get("@#{name}")
+      instance_variable_get(:"@#{name}") || self.class.instance_variable_get(:"@#{name}")
     end
 
     # Normalize the given notify specification into canonical form.

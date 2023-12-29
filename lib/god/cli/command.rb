@@ -27,7 +27,7 @@ module God
       def dispatch
         if %w[load status signal log quit terminate].include?(@command)
           setup
-          send("#{@command}_command")
+          send(:"#{@command}_command")
         elsif %w[start stop restart monitor unmonitor remove].include?(@command)
           setup
           lifecycle_command

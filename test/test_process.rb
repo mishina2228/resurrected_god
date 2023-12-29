@@ -136,7 +136,7 @@ class TestProcessChild < Minitest::Test
       @p.expects(:fork)
       Process.expects(:waitpid)
       File.expects(:write).with(@p.default_pid_file, pid)
-      @p.send("#{action}=", 'run')
+      @p.send(:"#{action}=", 'run')
       @p.call_action(action)
     end
   end
@@ -260,7 +260,7 @@ class TestProcessDaemon < Minitest::Test
   def test_start_stop_restart_bang
     [:start, :stop, :restart].each do |x|
       @p.expects(:call_action).with(x)
-      @p.send("#{x}!")
+      @p.send(:"#{x}!")
     end
   end
 end

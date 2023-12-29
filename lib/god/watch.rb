@@ -284,7 +284,7 @@ module God
       before_items = behaviors
       before_items += [condition] if condition
       before_items.each do |b|
-        info = b.send("before_#{action}")
+        info = b.send(:"before_#{action}")
         if info
           msg = "#{name} before_#{action}: #{info} (#{b.base_name})"
           applog(self, :info, msg)
@@ -304,7 +304,7 @@ module God
       after_items = behaviors
       after_items += [condition] if condition
       after_items.each do |b|
-        info = b.send("after_#{action}")
+        info = b.send(:"after_#{action}")
         if info
           msg = "#{name} after_#{action}: #{info} (#{b.base_name})"
           applog(self, :info, msg)
