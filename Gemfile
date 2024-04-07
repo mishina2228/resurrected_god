@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'airbrake'
+gem 'base64' # TODO: Remove this line if airbrake-ruby adds base64 to its own dependencies
 gem 'daemons'
 gem 'json'
 gem 'minitest'
