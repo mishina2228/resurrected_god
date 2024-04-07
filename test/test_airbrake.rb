@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'helper'
+require_relative '../lib/god/contacts/airbrake'
 
 class TestAirbrake < Minitest::Test
   def test_notify
