@@ -60,4 +60,6 @@ jobs:
       - name: Run system test
         run: bundle exec rake system_test
       - name: Upload coverage report # It will be merged into the coverage for unit test
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
