@@ -514,8 +514,7 @@ if $load_god
     # Returns an Array of String names of the tasks affected.
     def self.signal(name, signal)
       items = watches_by_name(name)
-      jobs = []
-      items.each { |w| jobs << Thread.new { w.signal(signal) } }
+      jobs = items.map { |w| Thread.new { w.signal(signal) } }
       jobs.each(&:join)
       items.map(&:name)
     end
