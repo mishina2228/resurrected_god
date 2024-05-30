@@ -22,7 +22,7 @@ module God
       end
 
       def initialize(pid)
-        super(pid)
+        super
         return if @@total_mem
 
         # in K

@@ -12,7 +12,7 @@ module God
 
     # Instantiate a new Logger object
     def initialize(io = $stdout)
-      super(io)
+      super
       self.logs = {}
       @mutex = Mutex.new
       @capture = nil
@@ -24,7 +24,7 @@ module God
 
     def level=(lev)
       SysLogger.level = SimpleLogger::CONSTANT_TO_SYMBOL[lev] if Logger.syslog
-      super(lev)
+      super
     end
 
     # Log a message
