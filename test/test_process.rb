@@ -116,7 +116,7 @@ class TestProcessChild < Minitest::Test
 
     File.expects(:exist?).with(@p.chroot).returns(true)
     File.expects(:exist?).with(@p.log).returns(true)
-    File.expects(:exist?).with("#{@p.chroot}/dev/null").returns(true)
+    File.expects(:exist?).with("#{@p.chroot}#{File::NULL}").returns(true)
 
     File.stubs(:writable?).with('/foo.log').returns(true)
 

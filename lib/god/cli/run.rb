@@ -111,13 +111,13 @@ module God
       def setup_logging
         log_file = God.log_file
         log_file = File.expand_path(@options[:log]) if @options[:log]
-        log_file = '/dev/null' if !log_file && @options[:daemonize]
+        log_file = File::NULL if !log_file && @options[:daemonize]
         return unless log_file
 
         puts "Sending output to log file: #{log_file}" unless @options[:daemonize]
 
         # reset file descriptors
-        $stdin.reopen '/dev/null'
+        $stdin.reopen File::NULL
         $stdout.reopen(log_file, 'a')
         $stderr.reopen $stdout
         $stdout.sync = true

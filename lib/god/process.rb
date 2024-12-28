@@ -9,7 +9,7 @@ module God
                   :stop_timeout, :stop_signal, :umask
 
     def initialize
-      self.log = '/dev/null'
+      self.log = File::NULL
 
       @pid_file = nil
       @tracking_pid = true
@@ -139,7 +139,7 @@ module God
           applog(self, :error, "CHROOT directory '#{chroot}' does not exist")
         end
 
-        unless File.exist?(File.join(chroot, '/dev/null'))
+        unless File.exist?(File.join(chroot, File::NULL))
           valid = false
           applog(self, :error, "CHROOT directory '#{chroot}' does not contain '/dev/null'")
         end
@@ -311,7 +311,7 @@ module God
         self.dir ||= '/'
         Dir.chdir self.dir
         $0 = command
-        $stdin.reopen '/dev/null'
+        $stdin.reopen File::NULL
         if log_cmd
           $stdout.reopen IO.popen(log_cmd, 'a')
         else
