@@ -7,6 +7,7 @@ gem 'airbrake'
 gem 'base64' # TODO: Remove this line if airbrake-ruby adds base64 to its own dependencies
 gem 'daemons'
 gem 'json'
+gem 'logger' # TODO: Remove this line if airbrake-ruby adds logger to its own dependencies
 gem 'minitest'
 gem 'mocha'
 gem 'net-smtp' if RUBY_VERSION >= '3.1'
