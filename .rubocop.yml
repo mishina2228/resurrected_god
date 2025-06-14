@@ -39,6 +39,9 @@ Minitest/EmptyLineBeforeAssertionMethods:
 Minitest/RefutePredicate:
   Enabled: false
 
+Naming/PredicateMethod:
+  Enabled: false
+
 Performance/RedundantBlockCall:
   Enabled: false # for readability
 
