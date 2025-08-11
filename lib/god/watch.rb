@@ -27,6 +27,7 @@ module God
 
     # Public: God::Process delegators. See lib/god/process.rb for docs.
     extend Forwardable
+
     def_delegators :@process, :name, :uid, :gid, :start, :stop, :restart, :dir,
                    :name=, :uid=, :gid=, :start=, :stop=, :restart=,
                    :dir=, :pid_file, :pid_file=, :log, :log=,
