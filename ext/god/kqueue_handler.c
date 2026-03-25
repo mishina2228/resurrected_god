@@ -63,8 +63,9 @@ kqh_monitor_process(VALUE klass, VALUE pid, VALUE mask)
 }
 
 VALUE
-kqh_handle_events()
+kqh_handle_events(VALUE klass)
 {
+  (void)klass;
   int nevents, i, num_to_fetch;
   struct kevent *events;
 

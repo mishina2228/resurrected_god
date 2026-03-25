@@ -29,8 +29,9 @@ static int nl_sock;   /* socket for netlink connection  */
 
 
 VALUE
-nlh_handle_events()
+nlh_handle_events(VALUE klass)
 {
+  (void)klass;
   char buff[CONNECTOR_MAX_MSG_SIZE];
   struct nlmsghdr *hdr;
   struct proc_event *event;
