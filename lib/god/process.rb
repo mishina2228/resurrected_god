@@ -309,7 +309,7 @@ module God
         ::Process::Sys.setgid(gid_num) if gid_num
         ::Process::Sys.setuid(uid_num) if uid
         self.dir ||= '/'
-        Dir.chdir self.dir
+        Dir.chdir dir
         $0 = command
         $stdin.reopen File::NULL
         if log_cmd

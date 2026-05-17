@@ -47,7 +47,7 @@ module God
       when String
         { contacts: Array(spec) }
       when Array
-        raise ArgumentError, 'contains non-String elements' unless spec.all? { |x| x.instance_of?(String) }
+        raise ArgumentError, 'contains non-String elements' unless spec.all?(String)
 
         { contacts: spec }
       when Hash
@@ -60,7 +60,7 @@ module God
         when String
         # valid
         when Array
-          raise ArgumentError, 'has a :contacts key containing non-String elements' unless contacts.all? { |x| x.instance_of?(String) }
+          raise ArgumentError, 'has a :contacts key containing non-String elements' unless contacts.all?(String)
         # valid
         else
           raise ArgumentError, 'must have a :contacts key pointing to a String or Array of Strings'
