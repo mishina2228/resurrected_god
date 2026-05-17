@@ -243,7 +243,7 @@ if $load_god
                         warn: Logger::WARN,
                         error: Logger::ERROR,
                         fatal: Logger::FATAL }
-      LOG.level = log_level_map[self.log_level]
+      LOG.level = log_level_map[log_level]
 
       # Init has been executed.
       self.inited = true
@@ -675,7 +675,7 @@ if $load_god
       internal_init
 
       # Instantiate server.
-      self.server = Socket.new(self.port, socket_user, socket_group, socket_perms)
+      self.server = Socket.new(port, socket_user, socket_group, socket_perms)
 
       # Start monitoring any watches set to autostart.
       watches.each_value { |w| w.monitor if w.autostart? }
