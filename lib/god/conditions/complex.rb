@@ -64,15 +64,15 @@ module God
                 # nil @this here by initially setting res to true or false,
                 # depending on whether the first operator used is AND or OR
                 # respectively.
-                @op_stack[0] & AND > 0
+                @op_stack[0].anybits?(AND)
               else
                 @this.test
               end
 
         @op_stack.each do |op|
           cond = @oper_stack.shift
-          value = op & NOT > 0 ? !cond.test : cond.test
-          if op & AND > 0
+          value = op.anybits?(NOT) ? !cond.test : cond.test
+          if op.anybits?(AND)
             res &&= value
           else
             res ||= value
