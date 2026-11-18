@@ -2,5 +2,5 @@
 
 module God
   # The String version number for this package.
-  VERSION = '1.1.1'
+  VERSION = '1.1.2'
 end

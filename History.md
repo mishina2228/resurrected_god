@@ -1,3 +1,8 @@
+## 1.1.2 / 2026-11-18
+
+* Bug fixes
+  * Fix compilation errors with GCC 15 ([@dsander][])
+
 ## 1.1.1 / 2023-12-29
 
 * Minor Changes
