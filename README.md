@@ -4,7 +4,7 @@ ResurrectedGod: The Ruby Framework for Process Management
 [![Gem Version](https://badge.fury.io/rb/resurrected_god.svg)](https://badge.fury.io/rb/resurrected_god)
 [![Test](https://github.com/mishina2228/resurrected_god/actions/workflows/test.yml/badge.svg)](https://github.com/mishina2228/resurrected_god/actions/workflows/test.yml)
 [![Documentation](https://img.shields.io/badge/docs-rubydoc.info-blue.svg)](https://rubydoc.info/gems/resurrected_god)
-[![Maintainability](https://api.codeclimate.com/v1/badges/27b37a69e634eba75483/maintainability)](https://codeclimate.com/github/mishina2228/resurrected_god/maintainability)
+[![Maintainability](https://qlty.sh/gh/mishina2228/projects/resurrected_god/maintainability.svg)](https://qlty.sh/gh/mishina2228/projects/resurrected_god)
 [![codecov](https://codecov.io/gh/mishina2228/resurrected_god/branch/master/graph/badge.svg?token=K1DJPS9PSU)](https://codecov.io/gh/mishina2228/resurrected_god)
 
 **This project is forked from original [mojombo/god](https://github.com/mojombo/god).**
